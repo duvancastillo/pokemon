@@ -43,6 +43,7 @@ export const useFecth = (url) => {
       return;
     }
     const data = await resp.json();
+    console.log({ data });
     setstate({
       data: data,
       isLoading: false,
